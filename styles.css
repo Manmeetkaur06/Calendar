@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#calendar-container {
+    width: 350px;
+    margin: 20px auto;
+    border: 2px solid rgb(246, 44, 138);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#calendar-header {
+    background-color: pink;
+    color: rgb(246, 44, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#calendar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: rgb(246, 44, 138);
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    background-color: rgb(246, 44, 138);
+    color: white;
+    padding: 10px 0;
+}
+
+#calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+#calendar-dates div {
+    padding: 12px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#calendar-dates div:hover {
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.today {
+    background-color: rgb(246, 44, 138);
+    color: #000;
+    border-radius: 50%;
+}
+
